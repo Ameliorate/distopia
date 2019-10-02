@@ -1,5 +1,5 @@
 $name = "Cowsay";
-$priority = 800;
+$priority = 1200;
 $result = 1;
 
 $fun = sub {
