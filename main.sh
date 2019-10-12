@@ -2,4 +2,5 @@
 
 DISTOPIA_PWD="$(dirname "$0")"
 export DISTOPIA_PWD
-nix-shell $DISTOPIA_PWD/shell.nix --command "$DISTOPIA_PWD/src/main.pl $1"
+make -C $DISTOPIA_PWD result
+$DISTOPIA_PWD/result/bin/distopia $1

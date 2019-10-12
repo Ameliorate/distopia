@@ -9,6 +9,8 @@ let
     name = "distopia-pl";
     src = ./.;
 
+    buildPhase = "true";
+
     installPhase = ''
       mkdir -p $out/lib/distopia
       cp -r src $out/lib/distopia
